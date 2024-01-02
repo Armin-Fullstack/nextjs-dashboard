@@ -6,6 +6,11 @@ import InvoicesTable from './invoicesTable';
 import { CreateInvoice } from './buttons';
 import { fetchInvoicesPages } from '@/app/lib/data';
 import Pagination from './pagination';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 
 export default async function Page({
   searchParams,
